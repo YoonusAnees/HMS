@@ -1,0 +1,198 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/backround"
+    android:id="@+id/main"
+    tools:context=".srv">
+
+    <!-- Toolbar -->
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#2196F3"
+        android:padding="16dp"
+        android:layout_alignParentTop="true">
+
+        <!-- Menu Toggle Icon -->
+        <ImageView
+            android:id="@+id/toggle_icon"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:src="@drawable/ic_menu"
+            android:layout_gravity="start"
+            app:tint="@color/black" />
+
+        <!-- Title Text -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Select a Service"
+            android:textColor="#FFFFFF"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:layout_marginStart="8dp"
+            android:layout_gravity="center_vertical"
+            android:layout_toEndOf="@id/toggle_icon" />
+    </androidx.appcompat.widget.Toolbar>
+
+    <!-- ScrollView for the Service Cards -->
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/toolbar">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <!-- First Service Card -->
+            <androidx.cardview.widget.CardView
+                android:id="@+id/serviceCard1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="8dp"
+                app:cardCornerRadius="8dp"
+                app:cardElevation="6dp"
+                android:backgroundTint="#959795">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <ImageView
+                        android:id="@+id/serviceImage1"
+                        android:layout_width="match_parent"
+                        android:layout_height="195dp"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/spa_treatment"
+                        android:contentDescription="Spa Treatment" />
+
+                    <TextView
+                        android:id="@+id/serviceName1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/serviceImage1"
+                        android:text="Spa Treatment"
+                        android:textSize="20sp"
+                        android:textStyle="bold"
+                        android:layout_marginTop="8dp"
+                        android:layout_marginLeft="8dp"
+                        android:textColor="#333333" />
+
+                    <Button
+                        android:id="@+id/reserveButton1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Reserve Now"
+                        android:backgroundTint="#FF5722"
+                        android:textColor="#FFFFFF"
+                        android:layout_below="@id/serviceName1"
+                        android:layout_alignParentEnd="true"
+                        android:layout_margin="8dp" />
+                </RelativeLayout>
+            </androidx.cardview.widget.CardView>
+
+            <!-- Second Service Card -->
+            <androidx.cardview.widget.CardView
+                android:id="@+id/serviceCard2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="8dp"
+                app:cardCornerRadius="8dp"
+                app:cardElevation="6dp"
+                android:layout_below="@id/serviceCard1"
+                android:backgroundTint="#959795">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <ImageView
+                        android:id="@+id/serviceImage2"
+                        android:layout_width="match_parent"
+                        android:layout_height="200dp"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/fine_dining"
+                        android:contentDescription="Fine Dining" />
+
+                    <TextView
+                        android:id="@+id/serviceName2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/serviceImage2"
+                        android:text="Fine Dining"
+                        android:textSize="20sp"
+                        android:textStyle="bold"
+                        android:layout_marginTop="8dp"
+                        android:layout_marginLeft="8dp"
+                        android:textColor="#333333" />
+
+                    <Button
+                        android:id="@+id/reserveButton2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Reserve Now"
+                        android:backgroundTint="#FF5722"
+                        android:textColor="#FFFFFF"
+                        android:layout_below="@id/serviceName2"
+                        android:layout_alignParentEnd="true"
+                        android:layout_margin="8dp" />
+                </RelativeLayout>
+            </androidx.cardview.widget.CardView>
+
+            <!-- Third Service Card -->
+            <androidx.cardview.widget.CardView
+                android:id="@+id/serviceCard3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="8dp"
+                app:cardCornerRadius="8dp"
+                app:cardElevation="6dp"
+                android:layout_below="@id/serviceCard2"
+                android:backgroundTint="#959795">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <ImageView
+                        android:id="@+id/serviceImage3"
+                        android:layout_width="match_parent"
+                        android:layout_height="200dp"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/pool_side_cabana"
+                        android:contentDescription="Poolside Cabana" />
+
+                    <TextView
+                        android:id="@+id/serviceName3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/serviceImage3"
+                        android:text="Poolside Cabana"
+                        android:textSize="20sp"
+                        android:textStyle="bold"
+                        android:layout_marginTop="8dp"
+                        android:layout_marginLeft="8dp"
+                        android:textColor="#333333" />
+
+                    <Button
+                        android:id="@+id/reserveButton3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Reserve Now"
+                        android:backgroundTint="#FF5722"
+                        android:textColor="#FFFFFF"
+                        android:layout_below="@id/serviceName3"
+                        android:layout_alignParentEnd="true"
+                        android:layout_margin="8dp" />
+                </RelativeLayout>
+            </androidx.cardview.widget.CardView>
+
+        </RelativeLayout>
+    </ScrollView>
+
+</RelativeLayout>

@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "202232506658",
+    "project_id": "luxevista-fa484",
+    "storage_bucket": "luxevista-fa484.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:202232506658:android:cad63571cabb329519dd7b",
+        "android_client_info": {
+          "package_name": "com.example.luxe"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDddK6-v6d5VJbWpNKta8fyG7GzX0kuxPk"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

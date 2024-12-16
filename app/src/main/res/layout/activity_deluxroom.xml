@@ -1,0 +1,312 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/backround"
+    android:id="@+id/main"
+    tools:context=".deluxroom">
+
+    <!-- Toolbar -->
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#2196F3"
+        android:padding="16dp"
+        android:layout_alignParentTop="true">
+
+        <ImageView
+            android:id="@+id/toggle_icon"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:src="@drawable/ic_menu"
+            android:backgroundTint="@color/black" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Deluxe Room Selection"
+            android:textColor="#FFFFFF"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:layout_marginStart="8dp"
+            android:layout_toEndOf="@id/toggle_icon" />
+    </androidx.appcompat.widget.Toolbar>
+
+    <!-- Scrollable Container -->
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/toolbar">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="16dp">
+
+            <!-- Deluxe Room Card 1 -->
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="16dp"
+                app:cardElevation="12dp"
+                android:backgroundTint="#959795"
+                app:cardCornerRadius="12dp">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="16dp">
+
+                    <ImageView
+                        android:id="@+id/deluxeRoomImage1"
+                        android:layout_width="match_parent"
+                        android:layout_height="180dp"
+                        android:src="@drawable/d"
+                        android:scaleType="centerCrop"
+                        android:contentDescription="Deluxe Room 1" />
+
+                    <TextView
+                        android:id="@+id/deluxeRoomTitle1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/deluxeRoomImage1"
+                        android:text="Deluxe Room 1"
+                        android:textSize="20sp"
+                        android:textStyle="bold"
+                        android:textColor="@color/black"
+                        android:layout_marginTop="8dp" />
+
+                    <TextView
+                        android:id="@+id/deluxeRoomDescription1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/deluxeRoomTitle1"
+                        android:text="Experience the ultimate luxury in this spacious deluxe room, equipped with modern amenities and elegant decor."
+                        android:textSize="14sp"
+                        android:textColor="@color/white"
+                        android:layout_marginTop="4dp" />
+
+                    <TextView
+                        android:id="@+id/deluxeRoomPrice1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/deluxeRoomDescription1"
+                        android:text="Price: $450 per night"
+                        android:textSize="16sp"
+                        android:textColor="#FF5722"
+                        android:layout_marginTop="4dp" />
+
+                    <Button
+                        android:id="@+id/bookDeluxeRoomButton1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/deluxeRoomPrice1"
+                        android:text="Book It"
+                        android:backgroundTint="#FF5722"
+                        android:textColor="#FFFFFF"
+                        android:layout_marginTop="8dp" />
+                </RelativeLayout>
+            </androidx.cardview.widget.CardView>
+
+            <!-- Deluxe Room Card 2 -->
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="16dp"
+                app:cardElevation="12dp"
+                android:backgroundTint="#959795"
+                app:cardCornerRadius="12dp">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="16dp">
+
+                    <ImageView
+                        android:id="@+id/deluxeRoomImage2"
+                        android:layout_width="match_parent"
+                        android:layout_height="180dp"
+                        android:src="@drawable/d_2"
+                        android:scaleType="centerCrop"
+                        android:contentDescription="Deluxe Room 2" />
+
+                    <TextView
+                        android:id="@+id/deluxeRoomTitle2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/deluxeRoomImage2"
+                        android:text="Deluxe Room 2"
+                        android:textSize="20sp"
+                        android:textStyle="bold"
+                        android:textColor="@color/black"
+                        android:layout_marginTop="8dp" />
+
+                    <TextView
+                        android:id="@+id/deluxeRoomDescription2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/deluxeRoomTitle2"
+                        android:text="Indulge in elegance with rich furnishings and breathtaking views in this deluxe room."
+                        android:textSize="14sp"
+                        android:textColor="@color/white"
+                        android:layout_marginTop="4dp" />
+
+                    <TextView
+                        android:id="@+id/deluxeRoomPrice2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/deluxeRoomDescription2"
+                        android:text="Price: $480 per night"
+                        android:textSize="16sp"
+                        android:textColor="#FF5722"
+                        android:layout_marginTop="4dp" />
+
+                    <Button
+                        android:id="@+id/bookDeluxeRoomButton2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/deluxeRoomPrice2"
+                        android:text="Book It"
+                        android:backgroundTint="#FF5722"
+                        android:textColor="#FFFFFF"
+                        android:layout_marginTop="8dp" />
+                </RelativeLayout>
+            </androidx.cardview.widget.CardView>
+
+            <!-- Deluxe Room Card 3 -->
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="16dp"
+                app:cardElevation="12dp"
+                android:backgroundTint="#959795"
+                app:cardCornerRadius="12dp">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="16dp">
+
+                    <ImageView
+                        android:id="@+id/deluxeRoomImage3"
+                        android:layout_width="match_parent"
+                        android:layout_height="180dp"
+                        android:src="@drawable/d_4"
+                        android:scaleType="centerCrop"
+                        android:contentDescription="Deluxe Room 3" />
+
+                    <TextView
+                        android:id="@+id/deluxeRoomTitle3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/deluxeRoomImage3"
+                        android:text="Deluxe Room 3"
+                        android:textSize="20sp"
+                        android:textStyle="bold"
+                        android:textColor="@color/black"
+                        android:layout_marginTop="8dp" />
+
+                    <TextView
+                        android:id="@+id/deluxeRoomDescription3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/deluxeRoomTitle3"
+                        android:text="Unwind in this charming deluxe room, featuring exquisite design and upscale amenities."
+                        android:textSize="14sp"
+                        android:textColor="@color/white"
+                        android:layout_marginTop="4dp" />
+
+                    <TextView
+                        android:id="@+id/deluxeRoomPrice3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/deluxeRoomDescription3"
+                        android:text="Price: $500 per night"
+                        android:textSize="16sp"
+                        android:textColor="#FF5722"
+                        android:layout_marginTop="4dp" />
+
+                    <Button
+                        android:id="@+id/bookDeluxeRoomButton3"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/deluxeRoomPrice3"
+                        android:text="Book It"
+                        android:backgroundTint="#FF5722"
+                        android:textColor="#FFFFFF"
+                        android:layout_marginTop="8dp" />
+                </RelativeLayout>
+            </androidx.cardview.widget.CardView>
+
+            <!-- Deluxe Room Card 4 -->
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="16dp"
+                app:cardElevation="12dp"
+                android:backgroundTint="#959795"
+                app:cardCornerRadius="12dp">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="16dp">
+
+                    <ImageView
+                        android:id="@+id/deluxeRoomImage4"
+                        android:layout_width="match_parent"
+                        android:layout_height="180dp"
+                        android:src="@drawable/delux_gallery"
+                        android:scaleType="centerCrop"
+                        android:contentDescription="Deluxe Room 4" />
+
+                    <TextView
+                        android:id="@+id/deluxeRoomTitle4"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/deluxeRoomImage4"
+                        android:text="Deluxe Room 4"
+                        android:textSize="20sp"
+                        android:textStyle="bold"
+                        android:textColor="@color/black"
+                        android:layout_marginTop="8dp" />
+
+                    <TextView
+                        android:id="@+id/deluxeRoomDescription4"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/deluxeRoomTitle4"
+                        android:text="Luxuriate in this stunning room, featuring plush furnishings and top-tier services."
+                        android:textSize="14sp"
+                        android:textColor="@color/white"
+                        android:layout_marginTop="4dp" />
+
+                    <TextView
+                        android:id="@+id/deluxeRoomPrice4"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/deluxeRoomDescription4"
+                        android:text="Price: $520 per night"
+                        android:textSize="16sp"
+                        android:textColor="#FF5722"
+                        android:layout_marginTop="4dp" />
+
+                    <Button
+                        android:id="@+id/bookDeluxeRoomButton4"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/deluxeRoomPrice4"
+                        android:text="Book It"
+                        android:backgroundTint="#FF5722"
+                        android:textColor="#FFFFFF"
+                        android:layout_marginTop="8dp" />
+                </RelativeLayout>
+            </androidx.cardview.widget.CardView>
+
+        </LinearLayout>
+    </ScrollView>
+</RelativeLayout>

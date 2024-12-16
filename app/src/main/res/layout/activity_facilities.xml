@@ -1,0 +1,223 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/backround"
+    tools:context=".Facilities">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:id="@+id/main">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#2196F3"
+            android:padding="16dp">
+
+            <ImageView
+                android:id="@+id/toggle_icon"
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:src="@drawable/ic_menu"
+                android:layout_gravity="start"
+                app:tint="@color/black" />
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Facilities"
+                android:textColor="#FFFFFF"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:layout_marginStart="8dp"
+                android:layout_gravity="center_vertical"
+                android:layout_toEndOf="@id/toggle_icon" />
+        </androidx.appcompat.widget.Toolbar>
+
+        <TextView
+            android:id="@+id/titleOffers"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Exclusive Offers"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:textColor="#FF5722"
+            android:layout_marginTop="16dp"
+            android:layout_marginBottom="8dp" />
+
+        <GridLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            android:columnCount="1"
+            android:padding="16dp">
+
+            <TextView
+                android:id="@+id/descriptionOffers"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="At LuxeVista, we pride ourselves on providing our guests with exceptional experiences.
+                 Take advantage of our exclusive offers:"
+                android:textSize="16sp"
+                android:textColor="@color/white"
+                android:layout_marginBottom="16dp" />
+
+            <TextView
+                android:id="@+id/beachTours"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="🌊 Beach Tours"
+                android:textSize="18sp"
+                android:textColor="@color/white"
+                android:layout_marginBottom="8dp" />
+
+            <TextView
+                android:id="@+id/waterSports"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="🚤 Water Sports"
+                android:textSize="18sp"
+                android:textColor="@color/white"
+                android:layout_marginBottom="8dp" />
+
+            <TextView
+                android:id="@+id/diningRecommendations"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="🍽️ Dining Recommendations"
+                android:textSize="18sp"
+                android:textColor="@color/white"
+                android:layout_marginBottom="16dp" />
+        </GridLayout>
+
+        <!-- Attractions Section -->
+        <TextView
+            android:id="@+id/titleAttractions"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Nearby Attractions"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:textColor="#FF5722"
+            android:layout_marginBottom="8dp" />
+
+        <GridLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            android:columnCount="1"
+            android:padding="16dp">
+
+            <TextView
+                android:id="@+id/descriptionAttractions"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Explore a world of adventure and exploration beyond LuxeVista:"
+                android:textSize="16sp"
+                android:textColor="@color/white"
+                android:layout_marginBottom="16dp" />
+
+            <TextView
+                android:id="@+id/beautifulBeaches"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="🏖️ Beautiful Beaches"
+                android:textSize="18sp"
+                android:textColor="@color/white"
+                android:layout_marginBottom="8dp" />
+
+            <TextView
+                android:id="@+id/vibrantNightlife"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="🌟 Vibrant Nightlife"
+                android:textSize="18sp"
+                android:textColor="@color/white"
+                android:layout_marginBottom="8dp" />
+
+            <TextView
+                android:id="@+id/localDining"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="🍴 Local Dining Experiences"
+                android:textSize="18sp"
+                android:textColor="@color/white"
+                android:layout_marginBottom="16dp" />
+        </GridLayout>
+
+        <!-- Notifications Section -->
+        <TextView
+            android:id="@+id/titleNotifications"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Stay Updated"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:textColor="#FF5722"
+            android:layout_marginBottom="8dp" />
+
+        <GridLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            android:columnCount="1"
+            android:padding="16dp">
+
+            <TextView
+                android:id="@+id/descriptionNotifications"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Stay connected with LuxeVista! Our guests can opt to receive timely notifications about:"
+                android:textSize="16sp"
+                android:textColor="@color/white"
+                android:layout_marginBottom="16dp" />
+
+            <TextView
+                android:id="@+id/specialEvents"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="🎉 Special Hotel Events"
+                android:textSize="18sp"
+                android:textColor="@color/white"
+                android:layout_marginBottom="8dp" />
+
+            <TextView
+                android:id="@+id/discounts"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="💸 Discounts"
+                android:textSize="18sp"
+                android:textColor="@color/white"
+                android:layout_marginBottom="8dp" />
+
+            <TextView
+                android:id="@+id/serviceUpdates"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="🔔 Service Updates"
+                android:textSize="18sp"
+                android:textColor="@color/white"
+                android:layout_marginBottom="16dp" />
+        </GridLayout>
+
+        <!-- Learn More Button -->
+        <Button
+            android:id="@+id/learnMoreButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Learn More"
+            android:backgroundTint="#FF5722"
+            android:textColor="#FFFFFF"
+            android:padding="12dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginBottom="8dp"
+            android:background="#FF5722" />
+    </LinearLayout>
+</ScrollView>
